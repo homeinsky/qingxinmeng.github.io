@@ -1,0 +1,220 @@
+%\documentstyle[11pt,comment]{res} % default is 10 pt
+\documentclass[11pt,letterpage]{res}
+\setlength{\textheight}{9.5in} % increase text height to fit resume on 1 page
+%\documentstyle[helvetica,11pt]{res} to get helvetica postscript font
+% Use \documentstyle[11pt]{res} to get default (Computer Modern) font
+\newsectionwidth{0pt}  % So the text is not indented under section headings
+\usepackage{comment}
+\usepackage{enumitem}
+%%%%%palatino font%%%%%
+\usepackage[sc]{mathpazo}
+
+%\usepackage{hyperref}
+%\hypersetup{
+%    colorlinks,%
+%    citecolor=black,%
+%    filecolor=black,%
+%    linkcolor=black,%
+%    urlcolor=black
+%}
+\usepackage{dsfont}
+\usepackage{url}    %base package for URL support
+\urlstyle{rm}    %URLs in times roman instead of courier
+%links in pdf clickable: hyperref package
+\usepackage[
+      % dvipdfm,    %put here the correct(!) driver you are using
+      colorlinks=true,    %no frame around URL
+      urlcolor=black,    %no colors
+      menucolor=black,    %no colors
+      linkcolor=black,    %no colors
+      pagecolor=black,    %no colors
+      bookmarks=true,    %tree-like TOC
+      bookmarksopen=true,    %expanded when starting
+      hyperfootnotes=false,    %no referencing of footnotes, does not compile
+      pdfpagemode=UseOutlines    %show the bookmarks when starting the pdf viewer
+]{hyperref}
+%\linespread{1.05}
+\begin{document}
+
+\name{{\Large {\bf Qingxin Meng}}\\[12pt]} % the \\[12pt] adds a blank line after name
+
+\address{
+Ph.D. candidate \\
+in Management Science and Information Systems\\
+Rutgers Business School\\
+1 Washington Park\\
+Newark, New Jersey 07102\\
+}
+
+\address{
+% \hspace{6.45cm} U.S. Resident
+\\ \hfill Web: https://qingxin-meng.github.io
+\\ \hfill Phone: +1-(201)-702-3381
+\\ \hfill Email: qm24@rutgers.edu
+%\\ \hspace{1.4cm} \url{http://www.pegasus.rutgers.edu/~mengqu}
+}
+
+\begin{resume}
+% Draw a horizontal line the whole width of resume:
+\moveleft\hoffset\vbox{\hrule width\resumewidth height
+0.1pt} \smallskip
+
+%\section{\underline{OBJECTIVE}} Seeking a faculty position in the
+%field of data mining/databases, and Bioinformatics.
+%\vspace{-0.5cm}
+\section{\underline{RESEARCH INTERESTS}}
+Data Mining, Data Analytics, Business Intelligence, Talent Analytics.
+
+% \begin{itemize} \itemsep -3pt
+% \item Data Mining and Knowledge Discovery
+% %\item Spatio-temporal Data Analysis
+% \item Business Analytics
+% %\item Recommender Systems
+% \item Mobile Recommender Systems
+% %\item Recommender Systems
+% %\item Machine Learning
+% \end{itemize}
+
+\section{\underline{EDUCATION}}
+\begin{description}
+ \item[] \hspace*{0.1cm} {\bf Ph.D.} Candidate    ~Management Science and Information Systems \hfill expected 2020 \\
+  \hspace*{0.55cm} Rutgers Business School, Rutgers University \\
+  \hspace*{0.55cm} Advisor: Dr. Hui Xiong\\
+\vspace{-0.5cm}
+ \item[] \hspace*{0.1cm} {\bf B.E.}\hspace*{0.26 cm} Mechanical Engineering \hfill 2010\\
+ \hspace*{0.45cm} University of Science and Technology of China
+\end{description}
+
+
+\section{\underline{PUBLICATIONS}}
+\begin{itemize}
+\item
+\textbf{Qingxin Meng}, Hengshu Zhu, Keli Xiao, Le Zhang, and Hui Xiong. ``A Hierarchical Career-Path-Aware Neural Network for Job Mobility Prediction.'' In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining (\textbf{KDD}), pp. 14-24. ACM, 2019.
+\begin{itemize}
+  \item Research Track, \textbf{Acceptance Rate: 14.3\%}.
+  \item First attempt to solve the dual highly specific problem related to job mobility prediction at the individual level: 1) who will be the talents’ next employer? 2) how long will the talents stay at their new position? 
+  \item Proposed a hierarchical career-path-aware neural network approach, which embedded with survival analysis and attention mechanism. The method conducted on a massive real-world dataset and the results revealed significant improvements in prediction accuracy.
+  \item Provided data-driven evidence showing interesting patterns associated with various factors (e.g., job duration, firm type, etc.) in the job mobility prediction process.
+\end{itemize}
+
+
+\item
+\textbf{Qingxin Meng}, Hengshu Zhu, Keli Xiao, and Hui Xiong. ``Intelligent Salary Benchmarking for Talent Recruitment: A Holistic Matrix Factorization Approach.'' In Proceedings of the 18th IEEE International Conference on Data Mining (\textbf{ICDM}), pp. 337-346. IEEE, 2018.
+  \begin{itemize}
+    \item Full paper, \textbf{Acceptance Rate: 11.1\%}.
+    \item Formalized the problem as a matrix completion task for predicting the missing salary information in an expanded salary matrix, solved the un-inferable problem of traditional statistic approaches when data is deficient.
+    \item Four domain-related assumptions are first tested then integrated into the framework to improve the estimation efficiency in terms of company similarity, job similarity, and spatial-temporal similarities.
+    \item Deployed in a real-world application system.
+  \end{itemize}
+\end{itemize}
+
+\section{\underline{WORKING PAPERS}}
+\begin{itemize}
+	\item
+Fine-grained Job Salary Benchmarking with Nonparametric Dirichlet-Process-based Latent Factor
+Model, plan to submit to INFORMS Journal on Computing.
+  \begin{itemize}
+    \item Designed a Nonparametric Dirichlet-Process-based Latent Factor model for job salary benchmarking.
+    \item Solved the cold-start problem for Matrix-Factorization-based salary benchmarking method.
+    \item Provided interpretability of the relevant skillsets emphasized by each respective job.
+  \end{itemize}
+\item
+Talent Flow Embedding for Company Competitive Analysis, submitted to the 26th World Wide Web Conference.
+  \begin{itemize}
+    \item Proposed a data-driven method to analyze the competitive relationship among companies.
+    \item Integrated multi-task network embedding into the framework which can preserve the in \& out degree information of nodes.
+  \end{itemize}
+\end{itemize}
+
+\section{\underline{PATENTS}}
+\begin{itemize}
+  \item A new job salary estimation method, installation, server and storage medium. \\
+  \hspace*{0.40cm}Inventors: \textbf{Qingxin Meng}, Hengshu Zhu, Chen Zhu, Hui Xiong\\
+  \hspace*{0.40cm}CN201810521480.4 (pending)
+\end{itemize}
+
+\section{\underline{PROFESSIONAL EXPERIENCES}}
+\begin{itemize}
+	\item Research Intern, Talent Intelligence Center, Baidu Inc.  Fall 2017, Fall 2018
+	\begin{itemize}
+		\item proposed a fine-grained holistic solution for automatically salary benchmarking by inquiring the online job advertisement data.
+		\item Proposed a framework for understanding individual job-hopping patterns.
+		\item Explored the relationship between talent flow and company competitive connections.
+		\item Wrote the chapter ``Big data applications on market intelligence'' of the book ``Talent Management Computing'' (under editorial review).
+	\end{itemize}
+	\item Research Intern, Artificial Intelligence Lab, Iflyteck Inc. Summer 2018
+	\begin{itemize}
+		\item Developed a human behavior analysis framework for online loan cheating detection.
+	\end{itemize} 
+\end{itemize}
+
+\section{\underline{TEACHING EXPERIENCES}}
+\begin{itemize}
+	\item
+{\bf Instructor, Rutgers Business School, NJ, Fall 2019}
+ \begin{itemize}
+	\item Undergraduate Course: “Business Research Methods” (29:623:340)
+ 	\item Prepared and taught the class with 44 students enrolled as a solo instructor. Prepared and graded the homework, course project ,and examinations. Assisted students who have challenges in understanding the course material outside the lectures.
+ \end{itemize}
+    \item
+{\bf TA, Rutgers Business School, NJ, Summer 2014}
+\begin{itemize}
+	\item Undergraduate Course: “Management Information Systems” (29:623:220)
+ 	\item Assisted students to complete their homework projects related to Excel and database programming once a week.
+\end{itemize}
+	\item
+{\bf Mentoring, Rutgers Business School, NJ, Fall 2018 Spring 2019}
+\begin{itemize}
+	\item Graduate Students Capstone Project
+ 	\item Mentored students to complete their research projects. Helped the students to find the research topics, overcome the challenges, solve the technical problems, and write the final reports. Evaluated the project. 
+\end{itemize}
+\end{itemize}
+
+
+\section{\underline{AWARDS AND HONORS}}
+\begin{itemize} \itemsep -3pt
+\item Student Travel Award, ACM KDD, 2019
+\item Student Travel Award, IEEE ICDM, 2018
+\item Outstanding Graduate Student, USTC, 2010
+\item Outstanding Student Scholarship, USTC, 2010, 2009, 2008
+\item The Silver Prize, Mathematical Contest in Modeling, China, 2008
+\end{itemize}
+
+\section{\underline{EXTERNAL REVIEW}}
+
+\begin{itemize} %\itemsep -1pt
+	\item The International Conference on Knowledge Science, Engineering and Management (KSEM 2019)
+	\item AAAI Conference on Artificial Intelligence (AAAI 2018, 2019)
+    \item International Joint Conferences on Artificial Intelligence (IJCAI 2018)
+    \item International Conference on Database Systems for Advanced Applications (DASFAA 2017)  
+    \item Frontiers of Computer Science (2018)
+\end{itemize}
+
+\section{\underline{PRESENTATIONS}}
+\begin{itemize} \itemsep -2pt
+\item A Hierarchical Career-Path-Aware Neural Network for Job Mobility Prediction, Informs Annual Meeting, Seattle USA, Oct. 2019 (upcoming).
+\item Intelligent Talent Recruitment Analytics, Stony Brook University, Oct. 2019 (upcoming).
+\item A Hierarchical Career-Path-Aware Neural Network for Job Mobility Prediction, In the 25th ACM SIGKDD Conference on Knowledge Discovery \& Data Mining (KDD) \& International Workshop on Talent and Management Computing (TMC), Invited Talk, Held in conjunction with KDD'19, Alaska USA, Nov. 2019.
+\item Intelligent Salary Benchmarking for Talent Recruitment: A Holistic Matrix Factorization Approach, The 18th IEEE Conference on Data Mining (ICDM), Singapore, Aug. 2018.
+\end{itemize}
+
+
+\section{\underline{LANGUAGES}}
+\begin{itemize}
+\item English, Mandarin.
+\end{itemize}
+
+\section{\underline{STUDENT VOLUNTEER}}
+\begin{itemize}
+\item In the 25th ACM SIGKDD Conference on Knowledge Discovery \& Data Mining.
+\item The 15th IEEE International Conference on Data Mining.
+\end{itemize}
+
+\section{\underline{PROFESSIONAL AFFILIATIONS}}
+\begin{itemize}
+\item Student member of ACM.
+\item Student member of INFORMS Computing Society.
+\end{itemize}
+
+\end{resume}
+\end{document}
